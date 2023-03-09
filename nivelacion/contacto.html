@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="src/escudo.png">
+  <title>Boca Juniors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div>
+    <nav class="navbar navbar-expand-lg " style="background-color: #224870;" id="nave">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="color: aliceblue;">
+          <img src="src/escudo.png" alt="Logo" width="60" height="54" class="d-inline-block align-text-top">
+          BOCA JUNIORS
+        </a>
+        <div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item btn btn-light" style="background-color: #224870;">
+                <a class="nav-link active  " aria-current="page" style="color: aliceblue;"
+                  href=" plantel.html">Plantel</a>
+              </li>
+              <li class="nav-item btn btn-light" style="background-color: #224870;">
+                <a class="nav-link active  " aria-current="page" style="color: aliceblue;"
+                  href=" bombonera.html">Bombonera</a>
+              </li>
+
+              <li class="nav-item btn btn-light" style="background-color: #224870;">
+                <a class="nav-link active" style="color: aliceblue;" aria-current="page"
+                  href="contacto.html">Contactanos</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  
+  <section id="formulario">
+    <div class="row text-center mt-2   ">
+      <h3>CONTACTATE CON  </h3>
+      <h1 class="orad">NOSOTROS</h1>
+      <p>Dejanos tus datos y evaluamos si no tenes antecedentes criminales </p>
+  
+  
+      <form class="row g-3" id="formulario">
+        <div class="col-6" id="convierte">
+          <input type="text" placeholder="Nombre" class="form-control" id="namee" name="namee" required>
+        </div>
+        <div class="col-6">
+          <input type="text" placeholder="Apellido" class="form-control"id="lastname" name="lastname" required>
+        </div>
+  
+        <div class="col-6">
+          <label class="form-label">¿En qué estás interesado?</label>
+          <select class="form-select" aria-label="Default select example" id="select1" name="select1" required>
+  
+            <option value="1">Hacerme jugador</option>
+            <option value="2">Hacerme socio</option>
+            <option value="3">Consulta general</option>
+          </select>
+  
+        </div>
+  
+        <div class="col-6">
+          <label class="form-label">Tema</label>
+          <input type="text" placeholder="¿De qué se trata tu conusulta?" class="form-control" id="tipo" name="tipo" required>
+        </div>
+  
+        <div class="col-12">
+          <textarea class="form-control" placeholder="Escribi tu consulta" rows="4" id="consulta" name="consulta" required></textarea>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+      
+
+
+          <button class="btn btn-dark" type="button" onclick="envioForm()"> Enviar </button>
+
+        </div>
+  
+      </form>
+    </div>
+  </section>
+
+  
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>

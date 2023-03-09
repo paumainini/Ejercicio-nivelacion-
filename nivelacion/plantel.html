@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="src/escudo.png">
+  <title>Boca Juniors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div>
+    <nav class="navbar navbar-expand-lg " style="background-color: #224870;" id="nave">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="color: aliceblue;">
+          <img src="src/escudo.png" alt="Logo" width="60" height="54" class="d-inline-block align-text-top">
+          BOCA JUNIORS
+        </a>
+        <div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item btn btn-light" style="background-color: #224870;">
+                <a class="nav-link active  " aria-current="page" style="color: aliceblue;"
+                  href=" plantel.html">Plantel</a>
+              </li>
+              <li class="nav-item btn btn-light" style="background-color: #224870;">
+                <a class="nav-link active  " aria-current="page" style="color: aliceblue;"
+                  href=" bombonera.html">Bombonera</a>
+              </li>
+
+              <li class="nav-item btn btn-light" style="background-color: #224870;">
+                <a class="nav-link active" style="color: aliceblue;" aria-current="page"
+                  href="contacto.html">Contactanos</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<body class="bg-light m-1" onload="mostrarTodos()">
+  <div>
+
+    <div class="plantel">
+      <br><br><br>
+      <h1 class="text-dark text-center">Plantel 2020 <span class="font-weight-bolder"></span></h1>
+      
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary text-center">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll text-center" style="--bs-scroll-height: 100px;">
+          <li class="nav-item btn btn-light">
+            <a class="nav-link active  " aria-current="page" href="#" onclick="mostrarTodos()" id="todos">Todos</a>
+          </li>
+          <li class="nav-item btn btn-light">
+            <a class="nav-link active  " aria-current="page" href="#" onclick="primerSelector()" id="sua">Buenos</a>
+          </li>
+          <li class="nav-item btn btn-light">
+            <a class="nav-link active  " aria-current="page" href="#" onclick="segundoSelector()" id="cap">Malos</a>
+          </li>
+          <li class="nav-item btn btn-light">
+            <a class="nav-link active  " aria-current="page" href="#" onclick="tercerSelector()" id="lasdos">Arqueros</a>
+          </li>
+       
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  </div>
+  </div>
+  </nav>
+
+  <main class="container-fluid m-auto">
+
+    <section class="border border-primary mh-100 mw-100 overflow-auto">
+      <div class="containter">
+        <div id="lista" class="row p-1">
+
+        </div>
+      </div>
+    </section>
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
